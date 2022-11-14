@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+ 
+<html>
+    <head>
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+		<link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+		<link rel="stylesheet" type="text/css" href="styles.css">
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+        <title>Music Page</title>
+    </head>
+ 
+    <body>
+    	<!-- navbar -->
+        <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top">
+        	<div class="container-fluid">
+        		<a href="#" class="navbar-brand">Nia Music Store</a>
+
+        		<button
+        			class="navbar-toggler" 
+        			type="button" 
+        			data-bs-toggle="collapse" 
+        			data-bs-target="#navmenu"
+        		>
+        			<span class="navbar-toggler-icon"></span>
+        		</button>
+
+				<div class="collapse navbar-collapse" id="navmenu">
+					<ul class="navbar-nav ms-auto">
+						<li class="nav-item">
+							<a href="#genres" class="nav-link">Genres</a>
+						</li>
+						<li class="nav-item">
+							<a href="#deals" class="nav-link">Deals</a>
+						</li>
+						<li class="nav-item">
+							<a href="#slbum" class="nav-link">Albums</a>
+						</li>
+						<li class="nav-item">
+							<a href="#faqs" class="nav-link">FAQs</a>
+						</li>
+						<li class="nav-item">
+							<a href="#artists" class="nav-link">Artists</a>
+						</li>
+						<li class="nav-item">
+							<a href="#contact" class="nav-link">Contact Us</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!-- Showcase -->
+		<section class="bg-white text-light p-5 text-center">
+			<div class="container">
+				<div class="d-sm-flex">
+					<div>
+						<h1 class="text-dark">All music at great <span class="text-warning">Discounts!</span></h1>
+						<p class="lead text-dark">
+							Free Shipping with purchase of $150 or more
+						</p>
+						<h2>
+							<p class="lead text-dark">
+								Thousands of albums at discounted prices. Exellent prices, fast shipping!
+							</p>
+						</h2>
+						<button class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#act">Shop Now!</button>
+					</div>
+					<img class="img-fluid w-50" src="undraw_compose_music_ovo2.svg" alt="World image">
+				</div>
+			</div>
+		</section>
+
+		<!-- Newsletter -->
+		<section class="bg-primary text-light p-5">
+			<div class="container">
+				<div class="d-md-flex justify-content-between align-items-center">
+					<h3 class="mb-3 mb-md-0">Sign up for coupons:</h3>
+
+					<!-- Input group. Get it from Bootstrap documentation>Forms>Input Group -->
+					<div class="input-group">
+  						<input type="text" class="form-control" placeholder="Email" aria-label="Recipient's username" aria-describedby="button-addon2">
+  						<button class="btn btn-dark btn-lg" type="button" id="button-addon2">Submit</button>
+					</div>
+				</div>
+			</div>
+		</section>
+        
+        <!-- Boxes -->
+        <section class="p-5">
+        	<div class="container">
+        		<div class="row text-center">
+        			<!-- Create 3 columns and then cards found under Bootstrap documentation>Components>Cards -->
+        			<div class="col-md">
+        				<div class="card bg-warning text-dark">
+        					<div class="card-body text-center">
+        						<!-- Search for bootstrap icons CDN. Add the link from Option 1 in the head section under the bootstrap link. -->
+        						<div class="h1 mb-3">
+        							<i class="bi bi-laptop"></i>
+        						</div>
+        						<h3 class="card-title mb-3">Rock</h3>
+        						<p class="card-text">
+        							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa
+        						</p>
+        						<a href="#" class="btn btn-primary">Read More</a>
+        					</div>
+        				</div>
+        			</div>
+
+        			<div class="col-md">
+        				<div class="card bg-primary text-light">
+        					<div class="card-body text-center">
+        						<div class="h1 mb-3">
+        							<i class="bi bi-person-square"></i>
+        						</div>
+        						<h3 class="card-title mb-3">Blues</h3>
+        						<p class="card-text">
+        							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa
+        						</p>
+        						<a href="#" class="btn btn-warning">Read More</a>
+        					</div>
+        				</div>
+        			</div>
+					<div class="col-md">
+						<div class="card bg-warning text-dark">
+        					<div class="card-body text-center">
+        						<div class="h1 mb-3">
+        							<i class="bi bi-people"></i>
+        						</div>
+        						<h3 class="card-title mb-3">Pop</h3>
+        						<p class="card-text">
+        							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa
+        						</p>
+        						<a href="#" class="btn btn-primary">Read More</a>
+        					</div>
+        				</div>
+					</div>
+				</div>
+			</div>
+		</section>
+        
+		<!-- Creating 2 Sections -->
+		<section id="genres" class="p-5">
+			<div class="container bg-dark">
+				<div class="row align-items-center justify-content-between">
+
+					<div class="col-md p-5 text-light">
+						<h2>Genres</h2>
+						<p class="lead">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa. 
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa.
+						</p>
+						<a href="#" class="btn btn-light mt-3">
+							<i class="bi bi-chevron-right"></i>Read More
+						</a>
+					</div>
+					<div class="col-md">
+						<img src="undraw_happy_music_g6wc.svg" class="img-fluid" alt="image of our process">
+					</div>
+				</div>
+			</div>
+		</section>
+
+<section id="deals" class="p-5 bg-light text-dark">
+			<div class="container">
+				<div class="row align-items-center justify-content-between">
+					<div class="col-md">
+						<img src="undraw_music_re_a2jk.svg" class="img-fluid" alt="a team image">
+					</div>
+					<div class="col-md p-5">
+						<h2>Deals</h2>
+						<p class="lead">
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa. 
+						</p>
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi non quis exercitationem culpa.
+						</p>
+						<a href="#" class="btn btn-dark mt-3">
+							<i class="bi bi-chevron-right"></i>Read More
+						</a>
+					</div>
+				</div>
+			</div>
+		</section>
+<section id="albums" class="p-5 bg-primary">
+	<div class="container">
+		<div class="row align-items-center justify-content-between">
+			<div class="col-md p-5">
+				<h2 class="text-center mb-4">Latest Albums</h2>
+				<table class="table table-striped table table-hover bg-light">
+					<thead class="bg-dark text-light">
+					  <tr>
+						<th scope="col">#</th>
+						<th scope="col">Artist</th>
+						<th scope="col">Album</th>
+						<th scope="col">Release</th>
+					  </tr>
+					</thead>
+					<tbody>
+					  <tr>
+						<th scope="row">1</th>
+						<td>Adele</td>
+						<td>30</td>
+						<td>November 19, 2021</td>
+					  </tr>
+					  <tr>
+						<th scope="row">2</th>
+						<td>Taylor Swift</td>
+						<td>Red</td>
+						<td>November 12, 2021</td>
+					  </tr>
+					  <tr>
+						<th scope="row">3</th>
+						<td>ABBA</td>
+						<td>Voyage</td>
+						<td>November 5, 2021</td>
+					  </tr>
+					  <tr>
+						<th scope="row">3</th>
+						<td>New Adventures in Hi-Fi</td>
+						<td>R.E.M.</td>
+						<td>October 29, 2021</td>
+					  </tr>
+					  <tr>
+						<th scope="row">3</th>
+						<td>John Coltrane</td>
+						<td>A Love Supreme</td>
+						<td>October 22, 2021</td>
+					  </tr>
+					  <tr>
+						<th scope="row">3</th>
+						<td>Illuminati Hotties</td>
+						<td>Let Me Do One More</td>
+						<td>October 1, 2021</td>
+					  </tr>
+					</tbody>
+				  </table>
+			</div>
+		</div>
+	</div>
+</section>
+
+		<!-- FAQs Accordion -->
+		<section id="faqs" class="p-5">
+			<div class="container">
+				<h2 class="text-center mb-4">FAQs</h2>
+				<div class="accordion accordion-flush" id="accordionFlushExample">
+					<!-- Item 1 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-one">
+        Where are you located?
+      </button>
+    </h2>
+    <div id="question-one" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis nulla vel ex fermentum, eget bibendum turpis condimentum. Nunc imperdiet est eu eros congue scelerisque. Integer efficitur venenatis neque, ac viverra nibh consectetur in. Suspendisse porta leo id risus blandit aliquam. Donec bibendum ante purus, bibendum sodales lectus blandit sed.</div>
+    </div>
+  </div>
+  <!-- Item 2 -->
+   <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-two">
+        Do you have music classes?
+      </button>
+    </h2>
+    <div id="question-two" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis nulla vel ex fermentum, eget bibendum turpis condimentum. Nunc imperdiet est eu eros congue scelerisque. Integer efficitur venenatis neque, ac viverra nibh consectetur in. Suspendisse porta leo id risus blandit aliquam. Donec bibendum ante purus, bibendum sodales lectus blandit sed.</div>
+    </div>
+  </div>
+  <!-- Item 3 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-three">
+        How competitive are your prices?
+      </button>
+    </h2>
+    <div id="question-three" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis nulla vel ex fermentum, eget bibendum turpis condimentum. Nunc imperdiet est eu eros congue scelerisque. Integer efficitur venenatis neque, ac viverra nibh consectetur in. Suspendisse porta leo id risus blandit aliquam. Donec bibendum ante purus, bibendum sodales lectus blandit sed.</div>
+    </div>
+  </div>
+</div>
+	<!-- Item 4 -->
+  <div class="accordion-item">
+    <h2 class="accordion-header" id="flush-headingOne">
+      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#question-four">
+        How difficult is it to learn a music instrument?
+      </button>
+    </h2>
+    <div id="question-four" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+      <div class="accordion-body">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis nulla vel ex fermentum, eget bibendum turpis condimentum. Nunc imperdiet est eu eros congue scelerisque. Integer efficitur venenatis neque, ac viverra nibh consectetur in. Suspendisse porta leo id risus blandit aliquam. Donec bibendum ante purus, bibendum sodales lectus blandit sed.</div>
+    </div>
+  </div>
+ </div>
+</div>
+</section>
+
+<section id="artists" class="p-5 bg-primary">
+	<div class="container">
+		<h2 class="text-center text-white">Artists</h2>
+		<p class="lead text-center text-white mb-5">
+		Artists in all genres, Rock, Pop, Jazz, etc.</p>
+		<div class="row g-4">
+			<div class="col-md-6 col-lg-3">
+				<div class="card bg-light">
+					<div class="card-body text-center">
+						<img src="https://randomuser.me/api/portraits/men/5.jpg" class="rounded-circle mb-3" alt="">
+						<h3 class="card-title mb-3">Larry</h3>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis nulla vel</p>
+						<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-3">
+				<div class="card bg-light">
+					<div class="card-body text-center">
+						<img src="https://randomuser.me/api/portraits/women/6.jpg" class="rounded-circle mb-3" alt="">
+						<h3 class="card-title mb-3">Sue</h3>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis nulla vel</p>
+						<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-3">
+				<div class="card bg-light">
+					<div class="card-body text-center">
+						<img src="https://randomuser.me/api/portraits/men/7.jpg" class="rounded-circle mb-3" alt="">
+						<h3 class="card-title mb-3">Mike</h3>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis nulla vel</p>
+						<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-md-6 col-lg-3">
+				<div class="card bg-light">
+					<div class="card-body text-center">
+						<img src="https://randomuser.me/api/portraits/women/8.jpg" class="rounded-circle mb-3" alt="">
+						<h3 class="card-title mb-3">Kate</h3>
+						<p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis nulla vel</p>
+						<a href="#"><i class="bi bi-twitter text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-linkedin text-dark mx-1"></i></a>
+						<a href="#"><i class="bi bi-instagram text-dark mx-1"></i></a>
+					</div>
+				</div>
+			</div>
+		</div>
+</section>
+
+<!-- Contact & Map -->
+<section id="contact" class="p-5">
+	<div class="container">
+		<div class="row g-4">
+			<div class="col-md">
+				<h2 class="text-center mb-4">Contact Info</h2>
+				<ul class="list-group list-group-flush lead">
+					<li class="list-group-item">
+						<span class="fw-bold">Address:</span> 1600 Washington Ave. Fort Wayne, IN
+					</li>
+					<li class="list-group-item">
+						<span class="fw-bold">Main Phone:</span> (555) 555-5555
+					</li>
+					<li class="list-group-item">
+						<span class="fw-bold">Email:</span> info@mysite.test
+					</li>
+				</ul>
+			</div>
+			<div class="col-md">
+				<div id="map"></div>
+			</div>
+		</div>
+	</div>
+</section>
+
+<!-- Footer -->
+<footer class="p-5 bg-dark text-white text-center position-relative">
+	<div class="container">
+		<p class="lead">Copyright &copy; 2021 My Cool Company</p>
+		<a href="#" class="position-absolute bottom-0 end-0 p-5">
+			<i class="bi bi-arrow-up-circle h1"></i>
+		</a>
+	</div>
+</footer>
+
+<!-- Modal -->
+<div class="modal fade" id="act" tabindex="-1" aria-labelledby="actLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="actLabel">Contact us</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <p class="lead">Fill out this form and save 20%!</p>
+        <form>
+        	<div class="mb-3">
+        		<label for="first-name" class="col-form-label">
+        			First Name:
+        		</label>
+        		<input type="text" class="form-control" id="first-name">
+        	</div>
+        	<div class="mb-3">
+        		<label for="first-name" class="col-form-label">
+        			Last Name:
+        		</label>
+        		<input type="text" class="form-control" id="last-name">
+        	</div>
+        	<div class="mb-3">
+        		<label for="first-name" class="col-form-label">
+        			Email:
+        		</label>
+        		<input type="text" class="form-control" id="email">
+        	</div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+<script>
+mapboxgl.accessToken = 'pk.eyJ1Ijoic3RlcGhhbm9zbSIsImEiOiJja3ZyaGkwOTkxb3F1MnVtb3h2Zmx3bmxvIn0.ZrfJXZtOp8QVY1xCeDd09Q';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11',
+center: [41.097181, -85.135481],
+zoom: 12
+});
+
+</script>
+    </body>
+</html>
